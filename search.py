@@ -17,13 +17,15 @@ def getInfo_click():
 	pass
 
 
-Label(app, text = '오늘은 무슨 곡을 들을까?', height=2).pack()
-Button(app, text = '입력', width = 5, command = insertName_click).pack(side ='left')
-Button(app, text = '입력', width = 5, command = getInfo_click).pack(side ='left')
+titleLabel = Label(app, text = '오늘은 무슨 곡을 들을까?', height=2).pack()
+nameLabel = Label(app, text = '이름', width = 4, height=2).pack(side = 'left')
+nameEntry = Entry(app).pack(side = 'left')
+nameButton = Button(app, text = '입력', width = 7, command = insertName_click).pack(side ='left')
 
 
-
-
+nameLabel = Label(app, text = '노', width = 4, height=2).pack(side = 'left')
+nameEntry = Entry(app).pack(side = 'left')
+getInfoButton = Button(app, text = '입력', width = 5, command = getInfo_click).pack(side ='bottom')
 
 
 
